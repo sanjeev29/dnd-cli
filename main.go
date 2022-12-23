@@ -24,7 +24,7 @@ func main() {
 
 	matched, _ := regexp.Match("^d\\d+", []byte(*dice))
 
-	if matched == false {
+	if !matched {
 		log.Fatal("Invalid dice format.")
 		return
 	}
